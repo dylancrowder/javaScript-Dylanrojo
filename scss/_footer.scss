@@ -1,0 +1,101 @@
+.padreFooter {
+    background-color: $background-color_1;
+
+
+
+    h3 a {
+
+        outline: none;
+        text-decoration: none;
+        color: $color_2;
+    }
+
+    .boton {
+        padding: 10px;
+        background-color: $background-color_2;
+        color: $color_1;
+        font-size: 15px;
+
+    }
+
+    .boton:hover {
+        @include botonHover;
+    }
+
+
+
+    .tituloFooter {
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        font-family: $font-family_2 ;
+        margin-bottom: 50px;
+    }
+
+    .tituloFooter a:hover {
+        color: azure ;
+    }
+
+    .formulario1 {
+        margin-top: 20px;
+
+
+        input {
+
+            padding: 10px;
+
+            font-size: 15px;
+        }
+
+    }
+
+}
+
+
+
+.contenedorFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+
+    font-family: $font-family_2 ;
+    font-size: 16px;
+    margin-left: 5px;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+.informacion {
+
+    p {
+
+        @include estiloNavFooter;
+    }
+}
+
+.redesSociales {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    a .imagenRedes {
+        width: 30px;
+        margin: 10px;
+
+    }
+
+
+
+    a .imagenRedes:hover {
+        filter: invert(1) ;
+    }
+}
+
+.footerContacto {
+    margin-top: 250px;
+}

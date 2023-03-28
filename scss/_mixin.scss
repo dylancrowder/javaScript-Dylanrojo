@@ -1,0 +1,24 @@
+@mixin botonHover {
+
+    background-color: $color_1;
+    color: $color_2;
+    transition: 1s;
+}
+
+
+@mixin estiloNavFooter {
+
+    color: $color_1;
+    background-color: $background-color_2;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px
+}
+
+@mixin underLineNav {
+
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+}

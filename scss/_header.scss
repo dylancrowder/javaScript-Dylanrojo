@@ -1,0 +1,41 @@
+
+
+
+.navbar{
+   background-image: url(../imagenes/fondooo.jpg);
+}
+
+.menuDesplegable2 {
+    a {
+        color: $color_1;
+        font-size: 20px;
+        margin-inline: 10px;
+        font-family: $font-family_2;
+
+        &:hover {
+           @include underLineNav;
+        }
+    }
+
+    .navbar-brand {
+       
+
+
+    }
+}
+
+.navbar-toggler {
+    border: none !important;
+    margin: 10px;
+    color: $color_1;
+    margin-bottom: 30px;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+
+a:active:before {
+    background-color: rgb(108, 108, 112);
+}

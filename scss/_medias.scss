@@ -1,0 +1,151 @@
+/* navegador web */
+
+@media (min-width: 950px) {
+
+  .navbar-brand {
+    margin-left: 30px !important;
+
+  }
+
+  /* footer web */
+
+  .padreFooter {
+    margin-top: 80px;
+    padding: 10px;
+  }
+
+}
+
+
+@media (max-width: 950px) {
+
+
+
+  /* footer movil */
+
+
+  .mainProductos {
+    overflow: hidden;
+  }
+
+  .padreFooter {
+    padding-block: 10px;
+    
+  }
+
+
+  .contenedorFooter {
+    display: flex;
+    flex-direction: column !important;
+    margin-block: 20px;
+
+.formulario1{
+  margin-block: 10px;
+}
+
+    .tituloFooter {
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-family_2 ;
+      margin-top: 50px !important;
+    }
+
+    .formulario1 {
+
+      margin-right: 33px;
+    }
+
+    input {
+      text-align: center;
+      width: 200px;
+
+    }
+
+    .boton {
+      margin: 10px;
+      font-size: 15px;
+    }
+
+
+    .redesSociales {
+      a {
+
+        margin: 10px;
+      }
+
+      .imagenRedes {
+        width: 60px;
+
+
+      }
+    }
+
+
+  }
+
+  /* mobil blog */
+
+  .img1 {
+
+    width: 90% !important;
+  }
+
+  .videos {
+
+    iframe {
+      width: 90% !important;
+      height: 350px !important;
+      margin-block-end: 20px;
+
+    }
+
+  }
+
+  /* contacto movil */
+
+  .contenedorInformacion {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+
+
+
+    .informacionDeContacto {
+
+
+      ul {
+        list-style: none;
+        font-family: $font-family_2 !important;
+        font-size: 20px;
+
+
+      }
+    }
+
+
+    .iframeContactos {
+
+      width: 300px;
+      height: 300px;
+
+
+    }
+
+  }
+
+
+  /* barra remeras , invierno y pantalones */
+
+  .navegadorIndex {
+
+
+    li a {
+      font-size: 18px;
+    }
+  }
+}

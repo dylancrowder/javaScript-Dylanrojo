@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+.navbar {
+  background-image: url(../imagenes/fondooo.jpg);
+}
+
+.menuDesplegable2 a {
+  color: white;
+  font-size: 20px;
+  margin-inline: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+.menuDesplegable2 a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.navbar-toggler {
+  border: none !important;
+  margin: 10px;
+  color: white;
+  margin-bottom: 30px;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+a:active:before {
+  background-color: rgb(108, 108, 112);
+}
+
+/* main del index */
+body {
+  overflow-x: hidden;
+}
+
+.fondo {
+  background-image: url(../imagenes/fondooo.jpg);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fondo .titulo {
+  color: white;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.navegadorIndex {
+  background-color: black;
+  position: sticky !important;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 100px;
+  background: rgb(0, 0, 0);
+}
+.navegadorIndex li a {
+  color: white;
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+}
+.navegadorIndex li a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.carta {
+  margin: 10px !important;
+  padding: 10px;
+  width: 22rem;
+}
+.carta h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.1rem;
+}
+.carta .imagenProducto {
+  margin: 0px;
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+}
+
+.imagenProducto {
+  cursor: pointer;
+  padding: 15px;
+}
+
+.imagenProducto:hover {
+  transform: scale(1.05);
+  transition: 399ms;
+  z-index: 1;
+}
+
+/* blog main */
+.mainBlog {
+  overflow: hidden;
+}
+.mainBlog .contenedorBlog .tituloBlog {
+  font-family: "Rajdhani", sans-serif !important;
+  margin-block: 50px;
+}
+.mainBlog .contenedorBlog .tituloImg {
+  color: black;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif !important;
+}
+.mainBlog .contenedorBlog .subtituloBlog {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif !important;
+  margin-block: 50px;
+}
+.mainBlog .contenedorBlog .img1 {
+  width: 40%;
+  margin: 15px;
+}
+.mainBlog .contenedorBlog .videos .iframeBlog {
+  width: 50%;
+  height: 500px;
+  margin-block-end: 20px;
+}
+
+/* main contacto */
+.mainContacto {
+  margin-bottom: 100px;
+}
+.mainContacto .tituloContacto {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif !important;
+}
+.mainContacto .contenedorContacto {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  margin: 20px;
+}
+.mainContacto .contenedorContacto input {
+  padding: 12px;
+  border-radius: 0%;
+  border: 1px solid rgba(0, 0, 0, 0.271);
+  font-family: "Rajdhani", sans-serif !important;
+}
+.mainContacto .contenedorContacto .mensaje {
+  padding-bottom: 150px;
+}
+.mainContacto .contenedorContacto .botonContacto1 {
+  padding: 12px;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+  font-family: "Rajdhani", sans-serif !important;
+}
+.mainContacto .contenedorContacto .botonContacto1:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+.mainContacto .subtitulo-Contacto {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif !important;
+  margin-top: 150px;
+}
+
+.contenedorInformacion {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.contenedorInformacion .informacionDeContacto ul {
+  list-style: square;
+  font-family: "Rajdhani", sans-serif !important;
+  font-size: 20px;
+  text-align: start;
+}
+.contenedorInformacion .informacionDeContacto ul .bolded {
+  font-weight: bold;
+}
+.contenedorInformacion .iframeContactos iframe {
+  width: 500px;
+  height: 500px;
+}
+
+/* main productos */
+.mainProductos {
+  margin-top: 160px;
+}
+.mainProductos .imagen1 {
+  margin: 0;
+}
+
+.cont {
+  font-family: "Rajdhani", sans-serif !important;
+}
+.cont .contenedorPosition {
+  position: sticky;
+  top: 0;
+}
+
+.titulosH4 {
+  font-size: 30px;
+  margin: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+.titulosH4 .precioProductos {
+  color: rgba(0, 0, 0, 0.568);
+}
+
+ul {
+  font-size: 20px;
+  margin: 30px;
+}
+
+.botonesProducto {
+  margin: 30px;
+}
+.botonesProducto label {
+  margin-right: 20px;
+  margin-block: 30px;
+}
+.botonesProducto h4 {
+  font-size: 18px;
+}
+.botonesProducto button {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  margin-block: 30px;
+}
+.botonesProducto .botonera:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+.padreFooter {
+  background-color: #E5E5E5;
+}
+.padreFooter h3 a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+.padreFooter .boton {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+.padreFooter .boton:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+.padreFooter .tituloFooter {
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 50px;
+}
+.padreFooter .tituloFooter a:hover {
+  color: azure;
+}
+.padreFooter .formulario1 {
+  margin-top: 20px;
+}
+.padreFooter .formulario1 input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contenedorFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  margin-left: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.informacion p {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.redesSociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.redesSociales a .imagenRedes {
+  width: 30px;
+  margin: 10px;
+}
+.redesSociales a .imagenRedes:hover {
+  filter: invert(1);
+}
+
+.footerContacto {
+  margin-top: 250px;
+}
+
+/* navegador web */
+@media (min-width: 950px) {
+  .navbar-brand {
+    margin-left: 30px !important;
+  }
+  /* footer web */
+  .padreFooter {
+    margin-top: 80px;
+    padding: 10px;
+  }
+}
+@media (max-width: 950px) {
+  /* footer movil */
+  .mainProductos {
+    overflow: hidden;
+  }
+  .padreFooter {
+    padding-block: 10px;
+  }
+  .contenedorFooter {
+    display: flex;
+    flex-direction: column !important;
+    margin-block: 20px;
+  }
+  .contenedorFooter .formulario1 {
+    margin-block: 10px;
+  }
+  .contenedorFooter .tituloFooter {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 50px !important;
+  }
+  .contenedorFooter .formulario1 {
+    margin-right: 33px;
+  }
+  .contenedorFooter input {
+    text-align: center;
+    width: 200px;
+  }
+  .contenedorFooter .boton {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .contenedorFooter .redesSociales a {
+    margin: 10px;
+  }
+  .contenedorFooter .redesSociales .imagenRedes {
+    width: 60px;
+  }
+  /* mobil blog */
+  .img1 {
+    width: 90% !important;
+  }
+  .videos iframe {
+    width: 90% !important;
+    height: 350px !important;
+    margin-block-end: 20px;
+  }
+  /* contacto movil */
+  .contenedorInformacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .contenedorInformacion .informacionDeContacto ul {
+    list-style: none;
+    font-family: "Rajdhani", sans-serif !important;
+    font-size: 20px;
+  }
+  .contenedorInformacion .iframeContactos {
+    width: 300px;
+    height: 300px;
+  }
+  /* barra remeras , invierno y pantalones */
+  .navegadorIndex li a {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

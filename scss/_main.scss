@@ -1,0 +1,280 @@
+/* main del index */
+
+body {
+    overflow-x: hidden;
+}
+
+.fondo {
+    background-image: url(../imagenes/fondooo.jpg);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .titulo {
+        color: $color_1;
+        text-align: center;
+        font-family: $font-family_2;
+        font-size: 40px;
+        margin-bottom: 60px;
+
+    }
+}
+
+
+.navegadorIndex {
+
+    background-color: $background-color_2;
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 100px;
+    background: rgb(0, 0, 0);
+
+    li a {
+        color: $color_1;
+        font-size: 20px;
+        font-family: $font-family_2;
+
+    }
+
+    li a:hover {
+        @include underLineNav;
+
+    }
+
+}
+
+
+.carta {
+    margin: 10px !important;
+    padding: 10px;
+    width: 22rem;
+
+    h3 {
+        font-family: $font-family_2 ;
+        font-size: 1.1rem;
+    }
+
+    .imagenProducto {
+        margin: 0px;
+    }
+}
+
+p {
+    font-family: $font-family_2 ;
+    font-size: 1rem;
+}
+
+.imagenProducto {
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+.imagenProducto:hover {
+    transform: scale(1.05);
+    transition: 399ms;
+    z-index: 1;
+
+
+}
+
+/* blog main */
+
+.mainBlog {
+    overflow: hidden;
+
+    .contenedorBlog {
+        .tituloBlog {
+            font-family: $font-family_2 !important;
+            margin-block: 50px;
+        }
+
+
+        .tituloImg {
+
+            color: $color_2;
+            text-decoration: none;
+            font-family: $font-family_2 !important;
+
+        }
+
+        .subtituloBlog {
+            text-align: center;
+            font-family: $font-family_2 !important;
+            margin-block: 50px;
+
+        }
+
+        .img1 {
+            width: 40%;
+            margin: 15px;
+
+        }
+
+        .videos {
+
+            .iframeBlog {
+                width: 50%;
+                height: 500px;
+                margin-block-end: 20px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+/* main contacto */
+
+.mainContacto {
+    margin-bottom: 100px;
+
+    .tituloContacto {
+        margin-top: 30px;
+        text-align: center;
+        font-family: $font-family_2 !important;
+    }
+
+    .contenedorContacto {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        margin: 20px;
+
+        input {
+            padding: 12px;
+            border-radius: 0%;
+            border: 1px solid rgba(0, 0, 0, 0.271);
+            font-family: $font-family_2 !important;
+
+        }
+
+        .mensaje {
+            padding-bottom: 150px;
+        }
+
+        .botonContacto1 {
+            padding: 12px;
+            margin-top: 25px;
+            background-color: $background-color_2;
+            color: $color_1;
+            font-family: $font-family_2 !important;
+        }
+
+        .botonContacto1:hover {
+            @include botonHover;
+
+        }
+    }
+
+    .subtitulo-Contacto {
+        text-align: center;
+        font-family: $font-family_2 !important;
+        margin-top: 150px;
+        
+
+    }
+}
+
+.contenedorInformacion {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+
+    .informacionDeContacto {
+
+       
+
+        ul {
+            list-style: square;
+            font-family: $font-family_2 !important;
+            font-size: 20px;
+            text-align: start;
+
+            .bolded {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .iframeContactos {
+        iframe {
+            width: 500px;
+            height: 500px;
+
+
+        }
+    }
+}
+
+/* main productos */
+
+.mainProductos {
+    margin-top: 160px;
+
+    .imagen1 {
+        margin: 0;
+    }
+}
+
+.cont {
+    font-family: $font-family_2 !important;
+
+    .contenedorPosition {
+        position: sticky;
+        top: 0;
+    }
+
+}
+
+.titulosH4 {
+
+    font-size: 30px;
+    margin: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.160);
+
+    .precioProductos {
+        color: rgba(0, 0, 0, 0.568);
+    }
+}
+
+ul {
+    font-size: 20px;
+    margin: 30px;
+
+}
+
+.botonesProducto {
+    margin: 30px;
+
+    label {
+
+        margin-right: 20px;
+        margin-block: 30px;
+
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    button {
+        color: $color_1;
+        background-color: $background-color_2;
+        border: 1px solid $color_2;
+        padding: 10px;
+        border-radius: 8px;
+        margin-block: 30px;
+    }
+
+    .botonera:hover {
+        @include botonHover;
+    }
+}
