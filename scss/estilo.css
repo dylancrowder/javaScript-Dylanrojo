@@ -30,15 +30,23 @@ a:active:before {
 }
 
 /* main del index */
+body {
+  overflow-x: hidden;
+}
+
 .fondo {
   background-image: url(../imagenes/fondooo.jpg);
-  height: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fondo .titulo {
   color: white;
   text-align: center;
   font-family: "Rajdhani", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
+  margin-bottom: 60px;
 }
 
 .navegadorIndex {
@@ -48,10 +56,6 @@ a:active:before {
   z-index: 10;
   margin-bottom: 100px;
   background: rgb(0, 0, 0);
-  background: rgb(32, 32, 32);
-  background: rgb(0, 0, 0);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(115, 115, 115) 80%, rgb(144, 144, 144) 100%);
 }
 .navegadorIndex li a {
   color: white;
@@ -127,7 +131,7 @@ p {
   margin-bottom: 100px;
 }
 .mainContacto .tituloContacto {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   font-family: "Rajdhani", sans-serif !important;
 }
@@ -135,7 +139,7 @@ p {
   display: flex;
   justify-content: center;
   height: 400px;
-  margin: 100px;
+  margin: 20px;
 }
 .mainContacto .contenedorContacto input {
   padding: 12px;
@@ -162,7 +166,6 @@ p {
   text-align: center;
   font-family: "Rajdhani", sans-serif !important;
   margin-top: 150px;
-  margin-bottom: 50px;
 }
 
 .contenedorInformacion {
@@ -238,6 +241,83 @@ ul {
   transition: 1s;
 }
 
+.padreFooter {
+  background-color: #E5E5E5;
+}
+.padreFooter h3 a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+.padreFooter .boton {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+.padreFooter .boton:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+.padreFooter .tituloFooter {
+  margin: auto;
+  margin-right: 350px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 50px;
+}
+.padreFooter .tituloFooter a:hover {
+  color: rgb(231, 235, 235);
+}
+.padreFooter .formulario1 {
+  margin-top: 20px;
+}
+.padreFooter .formulario1 input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contenedorFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  margin-left: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.informacion p {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.redesSociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.redesSociales a .imagenRedes {
+  width: 30px;
+  margin: 10px;
+}
+.redesSociales a .imagenRedes:hover {
+  filter: invert(1);
+}
+
+.footerContacto {
+  margin-top: 250px;
+}
+
 /* navegador web */
 @media (min-width: 950px) {
   .navbar-brand {
@@ -246,7 +326,7 @@ ul {
   /* footer web */
   .padreFooter {
     margin-top: 80px;
-    padding: 120px;
+    padding: 10px;
   }
 }
 @media (max-width: 950px) {
@@ -255,12 +335,25 @@ ul {
     overflow: hidden;
   }
   .padreFooter {
-    padding-block: 50px;
+    padding-block: 10px;
   }
   .contenedorFooter {
     display: flex;
     flex-direction: column !important;
-    margin-block: 50px;
+    margin-block: 20px;
+  }
+  .contenedorFooter .formulario1 {
+    margin-block: 10px;
+  }
+  .contenedorFooter .tituloFooter {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 50px !important;
+  }
+  .contenedorFooter .formulario1 {
+    margin-right: 33px;
   }
   .contenedorFooter input {
     text-align: center;
@@ -269,6 +362,12 @@ ul {
   .contenedorFooter .boton {
     margin: 10px;
     font-size: 15px;
+  }
+  .contenedorFooter .redesSociales a {
+    margin: 10px;
+  }
+  .contenedorFooter .redesSociales .imagenRedes {
+    width: 60px;
   }
   /* mobil blog */
   .img1 {
@@ -301,72 +400,4 @@ ul {
   .navegadorIndex li a {
     font-size: 18px;
   }
-}
-.padreFooter {
-  background-color: #E5E5E5;
-}
-.padreFooter h3 a {
-  outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
-  color: black;
-}
-.padreFooter .boton {
-  padding: 10px;
-  background-color: black;
-  color: white;
-  font-size: 15px;
-}
-.padreFooter .boton:hover {
-  background-color: white;
-  color: black;
-  transition: 1s;
-}
-.padreFooter .tituloFooter {
-  margin: auto;
-  font-size: 18px;
-  font-family: "Rajdhani", sans-serif;
-}
-.padreFooter .formulario1 {
-  margin-top: 40px;
-}
-.padreFooter .formulario1 input {
-  padding: 10px;
-  font-size: 15px;
-}
-
-.contenedorFooter {
-  display: flex;
-  flex-direction: row;
-}
-
-h3 {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 16px;
-  margin-left: 5px;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.informacion p {
-  color: white;
-  background-color: black;
-  text-align: center;
-  padding: 20px;
-  font-size: 15px;
-}
-
-.redesSociales {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px;
-}
-.redesSociales a .imagenRedes {
-  width: 20px;
-  margin: 10px;
-}
-
-.footerContacto {
-  margin-top: 250px;
 }/*# sourceMappingURL=estilo.css.map */

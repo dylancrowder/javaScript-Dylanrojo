@@ -261,13 +261,14 @@ ul {
 }
 .padreFooter .tituloFooter {
   margin: auto;
+  margin-right: 350px;
   text-align: center;
   font-size: 18px;
   font-family: "Rajdhani", sans-serif;
   margin-bottom: 50px;
 }
 .padreFooter .tituloFooter a:hover {
-  color: azure;
+  color: rgb(231, 235, 235);
 }
 .padreFooter .formulario1 {
   margin-top: 20px;

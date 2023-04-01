@@ -26,6 +26,7 @@
 
     .tituloFooter {
         margin: auto;
+        margin-right: 350px;
         text-align: center;
         font-size: 18px;
         font-family: $font-family_2 ;
@@ -33,7 +34,7 @@
     }
 
     .tituloFooter a:hover {
-        color: azure ;
+        color: rgb(231, 235, 235);
     }
 
     .formulario1 {
@@ -92,7 +93,7 @@ h3 {
 
 
     a .imagenRedes:hover {
-        filter: invert(1) ;
+        filter: invert(1);
     }
 }
 
