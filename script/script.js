@@ -1,105 +1,139 @@
 
 /* esta funcion para validar la edad y no ejecutar lo siguente en caso de que sea menor */
-function validarEdad() {
+/* function validarEdad() {
 
     let persona = prompt("ingresa tu edad");
 
     if (persona >= 18) {
-        console.log("estas adentro");
+        console.log("Bienvenido a la pagina web");
         mostrarMenu();
+        pagina2();
     } else {
-        console.log("sos menor de edad");
+        console.log("eres menor de edad no puedes ingresar a la pagina");
     }
-}
 
+} */
 
 /* si es mayo de edad ejecuta la funcion mostrarMenu */
 
-function mostrarMenu() {
+/* 
+function mostrarMenu() { */
 
-    /* pregunta el nombre del usuario y da la Bienvenida a la pagina */
+/* pregunta el nombre del usuario y da la Bienvenida a la pagina */
 
-    const numeroDeIntentos = 11;
-
-
-    for (let index = 1; index < numeroDeIntentos; index++) {
-        let nombre = prompt("como te llamas ?");
-        if (isNaN(nombre) || nombre == null) {
-            console.log("Bienvenido " + nombre);
-            break;
-        }
-        else {
-            console.log("no se admiten numeros o debes completar el formulario");
-
-        }
+/*   const numeroDeIntentos = 11;
 
 
+  for (let index = 1; index < numeroDeIntentos; index++) {
+      let nombre = prompt("¿cual es tu nombre?");
+      if (isNaN(nombre) || nombre == null) {
+          console.log("Bienvenido " + nombre);
+          break;
+      }
+      else {
+          console.log("no se admiten numeros o debes completar el formulario");
+
+      }
+
+  }
+*/
+
+/* pide un numero del 1 al 5 para luego ver cual es el descuento que le toca y retorna el resultado del producto restado */
+
+
+
+/*   let entrada = parseInt(prompt("ingrese un numero del 1 al 5 para obtener un descuento"));
+
+  while (entrada != entrada < 5 || entrada != null) {
+
+
+      console.log("Ingresaste el numero " + entrada);
+
+      if (entrada <= 5) {
+          entrada = parseInt(entrada);
+          break;
+
+      }
+      entrada = prompt("Debes ingresar un numero del 1 al 5");
+  }
+
+
+  switch (entrada) {
+
+      case 1:
+
+          console.log("te ganaste el producto gratis");
+          break;
+
+      case 2:
+          entrada = 20;
+          console.log("te ganaste un descuento del %" + entrada);
+          break;
+      case 3:
+
+          entrada = 10;
+          console.log("te ganaste un descuento del %" + entrada);
+          break;
+
+      case 4:
+          entrada = 5;
+          console.log("te ganaste un descuento del %" + entrada);
+          break;
+
+      case 5:
+          entrada = 15;
+          console.log("te ganaste un descuento del %" + entrada);
+          break;
+
+      default:
+          break;
+  }
+} */
+
+class Producto {
+    constructor(id, precio, stock) {
+        this.id = id;
+        this.precio = parseInt(precio);
+        this.stock = stock;
 
     }
-
-
-    /* pide un numero del 1 al 5 para luego ver cual es el descuento que le toca y retorna el resultado del producto restado */
-
-
-
-    let entrada = parseInt(prompt("ingrese un numero del 1 al 5"));
-
-    while (entrada != entrada < 5 || entrada != null) {
-
-
-        console.log("Ingresaste el numero " + entrada);
-
-        if (entrada <= 5) {
-            entrada = parseInt(entrada);
-            precioProducto = parseInt(prompt("precio del producto"));
-            console.log("el precio de tu producto es de " + precioProducto);
-            break;
-
-        }
-        entrada = prompt("Debes ingresar un numero del 1 al 5");
+    incrementarPrecio(incremento) {
+        this.precio = this.precio + incremento;
+        return this.precio;
     }
+}
 
 
-    resultado = 0;
+let pantalones = new Producto(1, 400, 30);
+let zapatillas = new Producto(2, 300, 20);
+let buzos = new Producto(3, 100, 10);
+let remeras = new Producto(4, 250, 50);
+
+const productos = [pantalones, zapatillas, buzos, remeras];
+let productosSelect = [];
+let total = 0;
+let cantidadProductos = parseInt(prompt("cuantos productos deseas comprar ?"));
 
 
-    switch (entrada) {
+for (let index = 0; index < cantidadProductos; index++) {
 
-        case 1:
+    /* poner find  */
+    let numeroindicado = parseInt(prompt("¿que producto quieres comprar? 1-->pantalones  2-->zapatillas 3--->buzos 4--->remeras "));
 
-            console.log("te ganaste el producto gratis");
-            break;
+    let x = productos[numeroindicado - 1]
+    productosSelect.push(x);
+}
 
-        case 2:
 
-            resultado = precioProducto * (20 / 100);
-            resultado = precioProducto - resultado;
-            console.log("te ganaste un bonus de 20% y el precio final es de " + resultado);
-            break;
+console.log(productos);
+console.log(productosSelect);
 
-        case 3:
+for (const Producto of productosSelect) {
 
-            resultado = precioProducto * (5 / 100);
-            resultado = precioProducto - resultado;
-            console.log("te ganaste un bonus de 5% y el precio final es de " + resultado);
-            break;
-
-        case 4:
-            resultado = precioProducto * (15 / 100);
-            resultado = precioProducto - resultado;
-            console.log("te ganaste un bonus de 15% y el precio final es de " + resultado);
-            break;
-
-        case 5:
-            resultado = precioProducto * (50 / 100);
-            resultado = precioProducto - resultado;
-            console.log("te ganaste un bonus de 50% y el precio final es de " + resultado);
-            break;
-
-        default:
-            break;
-    }
+    total += Producto.precio;
 
 }
 
-validarEdad();
+console.log(total);
+
+
